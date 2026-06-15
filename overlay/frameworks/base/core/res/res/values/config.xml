@@ -330,4 +330,12 @@
     <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
 
+        <!-- Forces the framework to explicitly cancel the illumination sequence 
+         on biometric success, even if a finger touch state is still active -->
+    <bool name="config_udfpsImmediateDisable">true</bool>
+
+    <!-- Disables the software-side touch listener loop the moment authentication 
+         succeeds, stopping the long-press thread from getting stuck -->
+    <bool name="config_udfpsHbmCustomInTouch">true</bool>
+
 </resources>
