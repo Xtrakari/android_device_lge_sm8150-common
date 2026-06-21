@@ -198,9 +198,17 @@ persist.vendor.radio.disable_retry=true
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.no_wait_for_card=1
 persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 ro.telephony.default_network=26
+
+# --- Indian Variant Android 15 Telephony Fixes ---
+ro.vendor.multisim.config=dsds
+persist.vendor.radio.multisim=dsds
+persist.vendor.radio.msim.cfg=dsds
+persist.vendor.radio.rat_on=all
+persist.vendor.radio.no_creg_wrapper=1
+ril.subscription.types=NV,RUIM
+telephony.lteOnCdmaDevice=1
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=false
